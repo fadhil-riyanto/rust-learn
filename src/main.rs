@@ -1,5 +1,7 @@
 mod ret;
 mod fmt;
+mod impl_keyword;
+mod scope;
 
 fn main() {
     let a: u32 = 332;
@@ -9,5 +11,8 @@ fn main() {
 
     println!("Hello, world!, im {}", z);
     fmt::full::do_full_fmt_stuff();
-    // fmt::full::
+    impl_keyword::format::do_impl_debug_test();
+    println!("ret callable: {}", impl_keyword::pure::callable());
+
+    scope::mutability::scope_mutability();
 }
