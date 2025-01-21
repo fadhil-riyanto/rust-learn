@@ -6,4 +6,6 @@ my repository while learning rust for upcoming projects
         https://practice.course.rs/formatted-output/debug-display.html
         https://stackoverflow.com/questions/68122958/error-info-doesnt-implement-display-required-by
 
-3. 
+3. impl keyword:
+        https://doc.rust-lang.org/std/keyword.impl.html
+        [how initialize an uninitialized struct](https://users.rust-lang.org/t/instantiate-struct-without-setting-values/20353/3)
