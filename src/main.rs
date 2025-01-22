@@ -2,6 +2,7 @@ mod ret;
 mod fmt;
 mod impl_keyword;
 mod scope;
+mod primitive;
 
 fn main() {
     let a: u32 = 332;
@@ -15,4 +16,6 @@ fn main() {
     println!("ret callable: {}", impl_keyword::pure::callable());
 
     scope::mutability::scope_mutability();
+
+    primitive::tuple::primitive();
 }
