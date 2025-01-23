@@ -1,3 +1,4 @@
+mod conversion;
 mod ret;
 mod fmt;
 mod impl_keyword;
@@ -18,4 +19,9 @@ fn main() {
     scope::mutability::scope_mutability();
 
     primitive::tuple::primitive();
+    conversion::conv1::simple_conv();
+    conversion::ownership::ownership_calle();
+    conversion::cptr::do_ptr_copy();
+
+    conversion::ownership2::ownership2();
 }
