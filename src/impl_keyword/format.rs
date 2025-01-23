@@ -1,3 +1,4 @@
+#[warn(unused_imports)]
 use std::fmt;
 
 struct Unprintable (i32);
