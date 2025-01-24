@@ -1,3 +1,6 @@
+#![allow(warnings)]
+
+mod ptr_in_rust;
 mod conversion;
 mod ret;
 mod fmt;
@@ -6,6 +9,7 @@ mod scope;
 mod primitive;
 
 fn main() {
+    #[allow(identio)]
     let a: u32 = 332;
     let b: u32 = 39789;
 
@@ -24,4 +28,9 @@ fn main() {
     conversion::cptr::do_ptr_copy();
 
     conversion::ownership2::ownership2();
+
+    ptr_in_rust::ptr1::ptrissame();
+    ptr_in_rust::copying::do_copy_int();
+    ptr_in_rust::double_ref::double_ref();
+    ptr_in_rust::double_ref::double_ref_immutability();
 }
