@@ -1,8 +1,20 @@
+use crate::{dd, helper::debug};
+
 pub fn iter_enumerate_test()
 {
         iter_one();
         iter_bytes_oldver();
         iter_new();
+        iter_slice();
+}
+
+fn iter_slice()
+{
+        let a: [char; 3] = ['a', 'b', 'c'];
+        let slice: &[char] = &a[0..1];
+
+        // println!("{:?}", slice);
+        dd!(slice);
 }
 
 fn iter_one()

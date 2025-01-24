@@ -8,6 +8,7 @@ mod fmt;
 mod impl_keyword;
 mod scope;
 mod primitive;
+mod helper;
 
 fn main() {
     #[allow(identio)]
