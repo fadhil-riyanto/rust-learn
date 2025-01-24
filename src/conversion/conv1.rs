@@ -26,7 +26,9 @@ fn scope()
 
 fn strcpy()
 {
+        #[allow(unused)]
         let mut s1 = String::from("wkwk");
+        #[allow(unused)]
         let mut s2 = s1.clone();
         println!("{}", s1);
 }
