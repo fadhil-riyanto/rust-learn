@@ -1,5 +1,6 @@
 #![allow(warnings)]
 
+mod iter;
 mod ptr_in_rust;
 mod conversion;
 mod ret;
@@ -33,4 +34,6 @@ fn main() {
     ptr_in_rust::copying::do_copy_int();
     ptr_in_rust::double_ref::double_ref();
     ptr_in_rust::double_ref::double_ref_immutability();
+
+    iter::iter1::iter_enumerate_test();
 }
