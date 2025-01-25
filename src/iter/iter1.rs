@@ -6,12 +6,30 @@ pub fn iter_enumerate_test()
         iter_bytes_oldver();
         iter_new();
         iter_slice();
+
+        iter_slice1();
+}
+
+fn iter_slice1() -> () {
+        let a: [char; 3] = ['a', 'b', 'c'];
+        let slice: &[char] = &a[0..3];
+
+        // for (i, &item) in slice.iter().enumerate() {
+        //         println!("{}", item);
+        // }
+
+        // println!("{:?}", slice);
+        dd!(slice.iter());
 }
 
 fn iter_slice()
 {
         let a: [char; 3] = ['a', 'b', 'c'];
-        let slice: &[char] = &a[0..1];
+        let slice: &[char] = &a[0..3];
+
+        for (i, &item) in slice.iter().enumerate() {
+                println!("{}", item);
+        }
 
         // println!("{:?}", slice);
         dd!(slice);
