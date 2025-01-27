@@ -12,9 +12,9 @@ impl Counter {
         }
 }
 
-impl Iterator for Counter {
-        type Item = usize;
-}
+// impl Iterator for Counter {
+//         type Item = usize;
+// }
 
 pub fn do_iter2() -> () {
         let a: Counter = Counter::new();
