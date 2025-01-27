@@ -1,6 +1,7 @@
 #![allow(warnings)]
 
 mod iter;
+mod vec;
 mod ptr_in_rust;
 mod conversion;
 mod ret;
@@ -9,6 +10,7 @@ mod impl_keyword;
 mod scope;
 mod primitive;
 mod helper;
+mod e_trait;
 
 fn main() {
     #[allow(identio)]
@@ -37,4 +39,12 @@ fn main() {
     ptr_in_rust::double_ref::double_ref_immutability();
 
     iter::iter1::iter_enumerate_test();
+    iter::iter2::do_iter2();
+    
+    e_trait::trait1::trait1();
+    iter::iter3::handle_iter3();
+
+    vec::vec1::do_vec_stuff();
+    vec::vec_chr::do_vec_chr();
+    vec::panic::do_panic();
 }
