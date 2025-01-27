@@ -2,7 +2,7 @@
 macro_rules! dd {
         ($a:expr) => {
                 {
-                        println!("{:?}", $a);
+                        println!("exec: {:?}", $a);
                 }
         }
 }
