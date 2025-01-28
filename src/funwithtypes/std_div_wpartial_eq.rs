@@ -4,7 +4,7 @@ use std::ops::Div;
 struct MyDiv {
         a: u32,
         b: u32,
-        ret: 32,
+        ret: u32,
 }
 
 impl Div for MyDiv {

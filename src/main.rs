@@ -53,4 +53,6 @@ fn main() {
     errors::questionmark::question_mark();
 
     funwithtypes::std_div_wpartial_eq::fun();
+
+    errors::propagation::do_propagation();
 }
