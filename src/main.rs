@@ -11,6 +11,7 @@ mod scope;
 mod primitive;
 mod helper;
 mod e_trait;
+mod errors;
 
 fn main() {
     #[allow(identio)]
@@ -46,5 +47,7 @@ fn main() {
 
     vec::vec1::do_vec_stuff();
     vec::vec_chr::do_vec_chr();
-    vec::panic::do_panic();
+    // vec::panic::do_panic();
+
+    errors::questionmark::question_mark();
 }
