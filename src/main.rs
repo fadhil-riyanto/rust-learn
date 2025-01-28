@@ -12,6 +12,7 @@ mod primitive;
 mod helper;
 mod e_trait;
 mod errors;
+mod funwithtypes;
 
 fn main() {
     #[allow(identio)]
@@ -50,4 +51,6 @@ fn main() {
     // vec::panic::do_panic();
 
     errors::questionmark::question_mark();
+
+    funwithtypes::std_div_wpartial_eq::fun();
 }
