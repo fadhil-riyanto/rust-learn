@@ -40,10 +40,10 @@ fn drunnk(str: &mut Option<&str>) -> Result<u32, &'static str>{
 
 fn question() -> Result<u32, &'static str> {
         let mut a = Option::Some("still water");
-        let mut ret: u32 = self::drink(&mut a)?; // this is lib
+        let mut ret: u32 = self::drink(&mut a)?; 
 
         let mut b = Option::Some("coffsee");
-        ret = self::drunnk(&mut b)?; // this is lib
+        ret = self::drunnk(&mut b)?; 
 
         return Ok(ret);
 }

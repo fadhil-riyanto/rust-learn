@@ -12,8 +12,9 @@ mod primitive;
 mod helper;
 mod e_trait;
 mod errors;
+mod async_futures;
 mod funwithtypes;
-
+mod rust_by_example;
 fn main() {
     #[allow(identio)]
     let a: u32 = 332;
@@ -55,4 +56,7 @@ fn main() {
     funwithtypes::std_div_wpartial_eq::fun();
 
     errors::propagation::do_propagation();
+
+    async_futures::sync_stuff::do_sync();
+    rust_by_example::run::run_me();
 }
