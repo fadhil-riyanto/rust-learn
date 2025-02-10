@@ -22,6 +22,12 @@ fn stenovia() {
     let mut iter = v.into_iter();
 }
 
+// fn iter_old()
+// {
+//     let myvec = vec![1, 2, 3, 4, 5];
+//     // let vector = 
+// }
+
 fn closure()
 {
         let mut a = 0;
@@ -35,4 +41,5 @@ fn closure()
 pub fn run_sugar() {
         stenovia();
         closure();
+        // iter_old();
 }

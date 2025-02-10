@@ -5,6 +5,7 @@ use crate::rust_by_example::default_type;
 use crate::rust_by_example::asref;
 use crate::rust_by_example::trait_bound;
 use crate::rust_by_example::iter_sugar;
+use crate::rust_by_example::buffer;
 // use super::asref::do_asref;
 
 pub fn run_me() -> () {
@@ -14,4 +15,5 @@ pub fn run_me() -> () {
         asref::do_asref();
         trait_bound::dotrait();
         iter_sugar::run_sugar();
+        buffer::do_reserve();
 }
