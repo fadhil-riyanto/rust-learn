@@ -8,3 +8,4 @@ pub mod asref;
 pub mod trait_bound;
 pub mod iter_sugar;
 pub mod buffer;
+pub mod heap;
