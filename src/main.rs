@@ -15,6 +15,8 @@ mod errors;
 mod async_futures;
 mod funwithtypes;
 mod rust_by_example;
+mod HPC;
+
 fn main() {
     #[allow(identio)]
     let a: u32 = 332;
@@ -59,4 +61,6 @@ fn main() {
 
     async_futures::sync_stuff::do_sync();
     rust_by_example::run::run_me();
+
+    HPC::atomic_synchronization::run_atomic_sync();
 }

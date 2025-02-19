@@ -10,3 +10,5 @@ pub mod iter_sugar;
 pub mod buffer;
 pub mod heap;
 pub mod mymacro;
+pub mod iterate;
+pub mod lifetime;

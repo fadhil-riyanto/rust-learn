@@ -9,6 +9,8 @@ use crate::rust_by_example::buffer;
 use crate::rust_by_example::heap;
 use crate::rust_by_example::mymacro;
 // use super::asref::do_asref;
+use crate::rust_by_example::iterate;
+use crate::rust_by_example::lifetime;
 
 pub fn run_me() -> () {
         freezing::freezing();
@@ -20,4 +22,7 @@ pub fn run_me() -> () {
         buffer::do_reserve();
         heap::test_box();
         mymacro::testmacro();
+        iterate::runiterate();
+
+        lifetime::run();
 }
