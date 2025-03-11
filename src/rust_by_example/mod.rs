@@ -12,3 +12,6 @@ pub mod heap;
 pub mod mymacro;
 pub mod iterate;
 pub mod lifetime;
+pub mod extending;
+pub mod ordering;
+pub mod ord;

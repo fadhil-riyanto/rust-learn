@@ -60,7 +60,7 @@ fn main() {
     errors::propagation::do_propagation();
 
     async_futures::sync_stuff::do_sync();
+    HPC::atomic_synchronization::run_atomic_sync();
     rust_by_example::run::run_me();
 
-    HPC::atomic_synchronization::run_atomic_sync();
 }

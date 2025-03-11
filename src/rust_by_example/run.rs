@@ -11,6 +11,9 @@ use crate::rust_by_example::mymacro;
 // use super::asref::do_asref;
 use crate::rust_by_example::iterate;
 use crate::rust_by_example::lifetime;
+use crate::rust_by_example::extending;
+use crate::rust_by_example::ordering;
+use crate::rust_by_example::ord;
 
 pub fn run_me() -> () {
         freezing::freezing();
@@ -25,4 +28,7 @@ pub fn run_me() -> () {
         iterate::runiterate();
 
         lifetime::run();
+        extending::run();
+        ordering::run();
+        ord::run();
 }
